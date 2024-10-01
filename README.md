@@ -12,5 +12,5 @@ You can view the live website here: [Echo Flare Digital](https://anishringe.gith
 ## Contact
 If you would like to reach us, please visit the Contact Us section on our website or use the following:
 - Email: crucibleanish@gmail.com
-- Phone: +845-208-3581
+- Phone: +91-84520 83581
 
