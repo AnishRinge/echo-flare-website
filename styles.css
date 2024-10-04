@@ -1,22 +1,21 @@
-/* Reset default margins and paddings */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Body Styling */
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Hero Section - Landing Page */
 .hero {
-    background: url('https://via.placeholder.com/1500x900') no-repeat center center/cover;
     height: 100vh;
+    background: url('https://via.placeholder.com/1500x900') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +33,6 @@ body {
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
 }
 
 .hero p {
@@ -49,90 +47,71 @@ body {
 
 .skills ul {
     list-style: none;
-    font-size: 1.2rem;
     padding: 0;
+    font-size: 1.2rem;
 }
 
-.skills ul li {
-    margin-bottom: 10px;
-    animation: slideIn 0.8s ease-in-out;
+/* CTA Introduction */
+.cta-intro {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 /* Sidebar Styling */
 .sidebar {
-    width: 200px;
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-    height: 100vh;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 220px;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    text-align: left;
 }
 
 .sidebar a {
     display: block;
-    padding: 15px;
     color: white;
     text-decoration: none;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
     background-color: #34495e;
+    border-radius: 5px;
 }
 
 .sidebar a:hover {
     background-color: #2980b9;
 }
 
-/* Main Content Area */
-.main {
-    margin-left: 220px; /* Space for sidebar */
+/* Hidden Sections Styling */
+.content {
+    margin-left: 240px;
     padding: 20px;
-    width: 100%;
 }
 
-.section {
-    padding: 40px;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.hidden {
+.content-section {
     display: none;
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    color: #2980b9;
 }
 
 /* CTA Button */
 .cta-button {
-    padding: 15px 30px;
+    padding: 10px 20px;
     background-color: #3498db;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .cta-button:hover {
     background-color: #2980b9;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #34495e;
-    color: white;
-    position: relative;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes slideIn {
-    0% { transform: translateY(30px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
 }
