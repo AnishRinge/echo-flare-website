@@ -3,148 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo Flare Digital</title>
-    <style>
-        /* Base styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            display: flex;
-        }
-
-        /* Sidebar Styling */
-        .sidebar {
-            width: 200px;
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        .sidebar a {
-            display: block;
-            padding: 15px;
-            color: white;
-            text-decoration: none;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            background-color: #34495e;
-        }
-
-        .sidebar a:hover {
-            background-color: #2980b9;
-        }
-
-        /* Main Content Area */
-        .main {
-            margin-left: 220px; /* To leave space for sidebar */
-            padding: 20px;
-            width: 100%;
-        }
-
-        .main h2 {
-            color: #2980b9;
-            margin-bottom: 20px;
-        }
-
-        /* Hide sections initially */
-        .content-section {
-            display: none;
-        }
-
-        /* Buttons for Google Form & Advertising */
-        .button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .button:hover {
-            background-color: #2980b9;
-        }
-
-        /* General container styling */
-        .container {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        /* Animation for displaying sections */
-        .fade-in {
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-    </style>
+    <title>Echo Flare Digital - Digital Marketing Solutions</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
 </head>
 <body>
+    <!-- Landing Page Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Echo Flare Digital</h1>
+            <p>Your Partner in Digital Marketing</p>
+            <div class="skills">
+                <h2>Our Expertise</h2>
+                <ul>
+                    <li>Meta Ads</li>
+                    <li>Advertising</li>
+                    <li>Content Creation</li>
+                </ul>
+            </div>
+            <a href="#about" class="cta-button">Get Started</a>
+        </div>
+    </section>
 
-    <!-- Sidebar -->
+    <!-- Sidebar for Navigation -->
     <div class="sidebar">
         <a href="#" onclick="showSection('about')">Section 1: About Us</a>
         <a href="#" onclick="showSection('form')">Section 2: Problem Submission Form</a>
         <a href="#" onclick="showSection('advertise')">Section 3: Advertise with Us</a>
     </div>
 
-    <!-- Main Content -->
+    <!-- Main Content Sections -->
     <div class="main">
         <!-- Section 1: About Us -->
-        <div id="about" class="content-section container fade-in">
+        <section id="about" class="section content-section hidden">
             <h2>About Us</h2>
-            <p>At <strong>Echo Flare Digital</strong>, we specialize in social media marketing tailored to coaches and consultants. Our mission is to provide affordable and effective marketing strategies through targeted social media campaigns. With a focus on driving measurable results, we help you grow your client base and elevate your brand’s visibility. Trust us to boost your online presence and take your business to the next level.</p>
-        </div>
+            <p>We specialize in social media marketing tailored to coaches and consultants. Our mission is to provide affordable and effective marketing strategies through targeted social media campaigns. With a focus on driving measurable results, we help you grow your client base and elevate your brand’s visibility.</p>
+        </section>
 
         <!-- Section 2: Google Form -->
-        <div id="form" class="content-section container fade-in">
+        <section id="form" class="section content-section hidden">
             <h2>Problem Submission Form</h2>
-            <p>Fill out the form below to let us know about your challenges as a coach or consultant:</p>
+            <p>Fill out this form to let us know about the challenges you face as a coach or consultant:</p>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXNxxxxxxxxxxxxxxxxxxxx/formResponse" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+        </section>
 
         <!-- Section 3: Advertise with Us -->
-        <div id="advertise" class="content-section container fade-in">
+        <section id="advertise" class="section content-section hidden">
             <h2>Advertise with Us</h2>
-            <p>We specialize in creating highly targeted social media ad campaigns for coaches and consultants. Click the button below to get started with our advertising services.</p>
-            <a href="#contact" class="button">Start Advertising</a>
-        </div>
+            <p>We specialize in creating highly targeted social media ad campaigns for coaches and consultants. Click the button below to explore how we can help advertise your brand through effective social media marketing.</p>
+            <a href="#contact" class="cta-button">Start Advertising</a>
+        </section>
     </div>
 
-    <script>
-        // Function to show sections based on the link clicked
-        function showSection(sectionId) {
-            // Hide all sections
-            var sections = document.querySelectorAll('.content-section');
-            sections.forEach(function(section) {
-                section.style.display = 'none';
-            });
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Echo Flare Digital - All Rights Reserved</p>
+    </footer>
 
-            // Show the selected section
-            var selectedSection = document.getElementById(sectionId);
-            selectedSection.style.display = 'block';
-        }
-    </script>
-
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
