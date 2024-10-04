@@ -7,53 +7,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Landing Page Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Echo Flare Digital</h1>
-            <p>Your Partner in Digital Marketing</p>
-            <div class="skills">
-                <h2>Our Expertise</h2>
-                <ul>
-                    <li>Meta Ads</li>
-                    <li>Advertising</li>
-                    <li>Content Creation</li>
-                </ul>
+
+    <!-- Landing Page -->
+    <section id="landing" class="section active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Echo Flare Digital</h1>
+                <p>Boost your business with tailored social media strategies!</p>
+                <div class="skills">
+                    <h2>Our Expertise</h2>
+                    <ul>
+                        <li>Meta Ads</li>
+                        <li>Advertising</li>
+                        <li>Content Creation</li>
+                    </ul>
+                </div>
+                <div class="statistics">
+                    <h3>Business Statistics</h3>
+                    <ul>
+                        <li>100+ successful campaigns</li>
+                        <li>20+ consultants helped</li>
+                        <li>85% client retention</li>
+                    </ul>
+                </div>
             </div>
-            <p class="cta-intro">Explore our sections to learn more</p>
         </div>
     </section>
 
-    <!-- Sidebar Navigation -->
+    <!-- Sidebar for Sections -->
     <div class="sidebar">
-        <a href="#" onclick="showSection('about')">Section 1: About Us</a>
+        <a href="#" onclick="showSection('niche')">Section 1: Coaches & Consultants</a>
         <a href="#" onclick="showSection('form')">Section 2: Problem Submission Form</a>
-        <a href="#" onclick="showSection('advertise')">Section 3: Advertise with Us</a>
+        <a href="#" onclick="showSection('advertising')">Section 3: Advertising Services</a>
+        <a href="#" onclick="showSection('about')">Section 4: About Us</a>
     </div>
 
-    <!-- Hidden Sections -->
-    <div class="content">
-        <!-- Section 1: About Us -->
-        <section id="about" class="content-section hidden">
-            <h2>About Us</h2>
-            <p>We specialize in social media marketing tailored to coaches and consultants. Our mission is to provide affordable and effective marketing strategies through targeted social media campaigns.</p>
-        </section>
+    <!-- Section 1: Coaches & Consultants -->
+    <section id="niche" class="section hidden">
+        <h2>Coaches & Consultants</h2>
+        <p>Coaches and consultants need strong marketing strategies to grow their businesses. Our services focus on creating targeted advertising campaigns to help you reach more potential clients, enhance brand visibility, and generate leads. With specialized social media ads, we guarantee you will see real results.</p>
+    </section>
 
-        <!-- Section 2: Problem Submission Form -->
-        <section id="form" class="content-section hidden">
-            <h2>Problem Submission Form</h2>
-            <p>Fill out this form to let us know about the challenges you face as a coach or consultant:</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXNxxxxxxxxxxxxxxxxxxxx/formResponse" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </section>
+    <!-- Section 2: Problem Submission Form -->
+    <section id="form" class="section hidden">
+        <h2>Problem Submission Form</h2>
+        <p>Tell us what challenges you're facing in your business, and we'll craft a strategy to address them:</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXNxxxxxxxxxxxxxxxxxxxx/formResponse" width="100%" height="600" frameborder="0">Loading…</iframe>
+    </section>
 
-        <!-- Section 3: Advertise with Us -->
-        <section id="advertise" class="content-section hidden">
-            <h2>Advertise with Us</h2>
-            <p>We specialize in creating highly targeted social media ad campaigns for coaches and consultants. Click the button below to explore how we can help advertise your brand through effective social media marketing.</p>
-            <a href="#contact" class="cta-button">Start Advertising</a>
-        </section>
-    </div>
+    <!-- Section 3: Advertising Services -->
+    <section id="advertising" class="section hidden">
+        <h2>Advertising Services</h2>
+        <p>Advertising is a powerful tool for lead generation. We help you create compelling campaigns that target the right audience to boost your brand’s visibility and bring in high-quality leads. Using platforms like Meta, we deliver personalized ad strategies that guarantee results.</p>
+    </section>
 
+    <!-- Section 4: About Us -->
+    <section id="about" class="section hidden">
+        <h2>About Us</h2>
+        <p>Echo Flare Digital is a leading digital marketing agency focused on helping coaches and consultants grow their businesses through smart, affordable advertising solutions. With years of experience in social media marketing, we’ve helped many professionals increase their visibility and client base.</p>
+    </section>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>

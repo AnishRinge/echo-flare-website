@@ -1,12 +1,9 @@
-// Function to show sections when clicked
+// Show the clicked section and hide others
 function showSection(sectionId) {
     // Hide all sections
-    var sections = document.querySelectorAll('.content-section');
-    sections.forEach(function(section) {
-        section.style.display = 'none';
-    });
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => section.classList.remove('active'));
 
     // Show the selected section
-    var selectedSection = document.getElementById(sectionId);
-    selectedSection.style.display = 'block';
+    document.getElementById(sectionId).classList.add('active');
 }
