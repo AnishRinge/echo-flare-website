@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,92 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echo Flare Digital</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .main {
-            padding: 20px;
-            text-align: center;
-        }
-        .main h2 {
-            color: #2980b9;
-        }
-        .summary {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #ecf0f1;
-            border-radius: 10px;
-        }
-        .contact {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .contact a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #34495e;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Echo Flare Digital</h1>
-        <p>Your Partner in Social Media Marketing</p>
-    </header>
-
-    <!-- Main Content Section -->
-    <div class="main">
-        <h2>About Us</h2>
-        <div class="summary">
-            <p>At <strong>Echo Flare Digital</strong>, we specialize in social media marketing tailored to coaches and consultants. Our mission is to provide affordable and effective marketing strategies through targeted social media campaigns. With a focus on driving measurable results, we help you grow your client base and elevate your brand’s visibility. Trust us to boost your online presence and take your business to the next level.</p>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:crucibleanish@gmail.com">crucibleanish@gmail.com</a></p>
-        <p>Phone: <a href="tel:+18452083581">+91-84520 83581</a></p>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Echo Flare Digital - All Rights Reserved</p>
-    </footer>
-
-</body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo Flare Digital</title>
-    <style>
+        /* Base styling */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -101,135 +15,136 @@
             display: flex;
         }
 
-        /* Left Navigation Section */
+        /* Sidebar Styling */
         .sidebar {
             width: 200px;
             background-color: #2c3e50;
             color: white;
             padding: 20px;
+            height: 100vh;
             position: fixed;
-            height: 100%;
+            top: 0;
+            left: 0;
         }
+
         .sidebar a {
             display: block;
-            padding: 10px;
+            padding: 15px;
             color: white;
             text-decoration: none;
-            margin: 10px 0;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #34495e;
         }
+
         .sidebar a:hover {
             background-color: #2980b9;
         }
 
-        /* Main Content */
+        /* Main Content Area */
         .main {
-            margin-left: 220px; /* Space for sidebar */
+            margin-left: 220px; /* To leave space for sidebar */
             padding: 20px;
+            width: 100%;
         }
 
-        /* Skills Section with Effects */
-        .skills {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .skills h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            color: #2c3e50;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .skills p {
-            font-size: 1.5em;
+        .main h2 {
             color: #2980b9;
-            animation: slideIn 1s ease-in-out;
+            margin-bottom: 20px;
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+        /* Hide sections initially */
+        .content-section {
+            display: none;
         }
 
-        @keyframes slideIn {
-            0% { transform: translateX(-100px); opacity: 0; }
-            100% { transform: translateX(0); opacity: 1; }
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: #2c3e50;
+        /* Buttons for Google Form & Advertising */
+        .button {
+            background-color: #3498db;
             color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .contact a {
-            color: #3498db;
+            padding: 10px 20px;
             text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 20px;
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #34495e;
-            color: white;
+        .button:hover {
+            background-color: #2980b9;
         }
+
+        /* General container styling */
+        .container {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Animation for displaying sections */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
 
-    <!-- Sidebar Section -->
+    <!-- Sidebar -->
     <div class="sidebar">
-        <a href="#about">Section 1: About Us</a>
-        <a href="#form">Section 2: Problem Form</a>
-        <a href="#advertise">Section 3: Advertise</a>
+        <a href="#" onclick="showSection('about')">Section 1: About Us</a>
+        <a href="#" onclick="showSection('form')">Section 2: Problem Submission Form</a>
+        <a href="#" onclick="showSection('advertise')">Section 3: Advertise with Us</a>
     </div>
 
-    <!-- Main Content Section -->
+    <!-- Main Content -->
     <div class="main">
-        <!-- Skills Section -->
-        <div class="skills">
-            <h1>Master of Meta Ads & Advertising</h1>
-            <p>Driving impactful results with tailored social media marketing strategies.</p>
-            <h1>Content Creation Expert</h1>
-            <p>Building engaging content to capture your audience's attention and grow your brand.</p>
-        </div>
-
-        <!-- About Us Section -->
-        <div id="about">
+        <!-- Section 1: About Us -->
+        <div id="about" class="content-section container fade-in">
             <h2>About Us</h2>
-            <p>At <strong>Echo Flare Digital</strong>, we specialize in social media marketing tailored to coaches and consultants...</p>
+            <p>At <strong>Echo Flare Digital</strong>, we specialize in social media marketing tailored to coaches and consultants. Our mission is to provide affordable and effective marketing strategies through targeted social media campaigns. With a focus on driving measurable results, we help you grow your client base and elevate your brand’s visibility. Trust us to boost your online presence and take your business to the next level.</p>
         </div>
 
         <!-- Section 2: Google Form -->
-        <div id="form">
+        <div id="form" class="content-section container fade-in">
             <h2>Problem Submission Form</h2>
-            <p>Fill out this form to let us know the challenges you face as a coach or consultant:</p>
-            <!-- Embed Google Form -->
+            <p>Fill out the form below to let us know about your challenges as a coach or consultant:</p>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXNxxxxxxxxxxxxxxxxxxxx/formResponse" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
 
-        <!-- Section 3: Advertise -->
-        <div id="advertise">
+        <!-- Section 3: Advertise with Us -->
+        <div id="advertise" class="content-section container fade-in">
             <h2>Advertise with Us</h2>
-            <p>Click the button below to explore how we can help advertise your brand through effective social media marketing.</p>
-            <a href="#contact" style="background-color: #3498db; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px;">Advertise Now</a>
+            <p>We specialize in creating highly targeted social media ad campaigns for coaches and consultants. Click the button below to get started with our advertising services.</p>
+            <a href="#contact" class="button">Start Advertising</a>
         </div>
     </div>
 
-    <!-- Contact Section -->
-    <div class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:crucibleanish@gmail.com">crucibleanish@gmail.com</a></p>
-        <p>Phone: <a href="tel:+18452083581">845-208-3581</a></p>
-    </div>
+    <script>
+        // Function to show sections based on the link clicked
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Echo Flare Digital - All Rights Reserved</p>
-    </footer>
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
->>>>>>> 654c7df (Updated index.html)
