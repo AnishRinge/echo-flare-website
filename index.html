@@ -4,7 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echo Flare Digital</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #2c3e50;
+            padding: 20px;
+            color: white;
+            width: 220px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 40px;
+            background-color: #ecf0f1;
+            margin-left: 240px;
+            width: calc(100% - 240px);
+            display: none;
+            min-height: 100vh;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* Hero Section for Landing Page */
+        .hero {
+            background: url('https://via.placeholder.com/1500x900') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .skills, .statistics {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .skills ul, .statistics ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -46,7 +145,7 @@
     <!-- Section 1: Coaches & Consultants -->
     <section id="niche" class="section hidden">
         <h2>Coaches & Consultants</h2>
-        <p>Coaches and consultants need strong marketing strategies to grow their businesses. Our services focus on creating targeted advertising campaigns to help you reach more potential clients, enhance brand visibility, and generate leads. With specialized social media ads, we guarantee you will see real results.</p>
+        <p>Coaches and consultants need strong marketing strategies to grow their businesses. Our services focus on creating targeted advertising campaigns to help you reach more potential clients, enhance brand visibility, and generate leads.</p>
     </section>
 
     <!-- Section 2: Problem Submission Form -->
@@ -68,8 +167,18 @@
         <p>Echo Flare Digital is a leading digital marketing agency focused on helping coaches and consultants grow their businesses through smart, affordable advertising solutions.</p>
     </section>
 
-    <!-- JavaScript for Section Control -->
-    <script src="script.js"></script>
+    <script>
+        // Function to show selected section and hide others
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
