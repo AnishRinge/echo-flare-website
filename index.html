@@ -38,14 +38,15 @@
 
         .sidebar a {
             display: block;
-            padding: 15px;
-            margin: 10px 0;
+            padding: 20px;
+            margin: 15px 0;
             background-color: #34495e;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             transition: all 0.3s ease;
             text-align: center;
+            font-size: 1.2rem;
         }
 
         .sidebar a:hover {
@@ -55,7 +56,7 @@
 
         /* Section Styling */
         .section {
-            padding: 40px;
+            padding: 60px;
             background-color: #ecf0f1;
             margin-left: 240px;
             width: calc(100% - 240px);
@@ -81,28 +82,54 @@
 
         .hero-content {
             background: rgba(0, 0, 0, 0.7);
-            padding: 40px;
+            padding: 50px;
             border-radius: 10px;
         }
 
         .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
+            font-size: 4.5rem;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
         }
 
         .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
         }
 
         .skills, .statistics {
-            margin-top: 20px;
-            font-size: 1.2rem;
+            margin-top: 30px;
+            font-size: 1.5rem;
         }
 
         .skills ul, .statistics ul {
             list-style-type: none;
         }
+
+        .skills ul li, .statistics ul li {
+            padding: 10px 0;
+        }
+
+        /* Expanded Content Styling */
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #2980b9;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -146,12 +173,14 @@
     <section id="niche" class="section hidden">
         <h2>Coaches & Consultants</h2>
         <p>Coaches and consultants need strong marketing strategies to grow their businesses. Our services focus on creating targeted advertising campaigns to help you reach more potential clients, enhance brand visibility, and generate leads.</p>
+        <p>With the right social media strategy, you'll be able to reach the right audience and turn leads into loyal clients. Let us help you craft a plan that will maximize your brand's potential.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Coaches and Consultants">
     </section>
 
     <!-- Section 2: Problem Submission Form -->
     <section id="form" class="section hidden">
         <h2>Problem Submission Form</h2>
-        <p>Tell us what challenges you're facing in your business, and we'll craft a strategy to address them:</p>
+        <p>Tell us what challenges you're facing in your business, and we'll craft a strategy to address them. Our solutions are tailored to your unique needs, ensuring effective results.</p>
         <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" width="100%" height="600" frameborder="0">Loading…</iframe>
     </section>
 
@@ -159,12 +188,16 @@
     <section id="advertising" class="section hidden">
         <h2>Advertising Services</h2>
         <p>Advertising is a powerful tool for lead generation. We help you create compelling campaigns that target the right audience to boost your brand’s visibility and bring in high-quality leads.</p>
+        <p>With platforms like Meta and Instagram, we ensure that your ads reach the most relevant users, converting them into potential clients. Our data-driven strategies will help you optimize your ad spend for maximum impact.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Advertising Services">
     </section>
 
     <!-- Section 4: About Us -->
     <section id="about" class="section hidden">
         <h2>About Us</h2>
         <p>Echo Flare Digital is a leading digital marketing agency focused on helping coaches and consultants grow their businesses through smart, affordable advertising solutions.</p>
+        <p>Founded in 2021, our agency has worked with a variety of clients, from small businesses to large enterprises. Our team is committed to delivering measurable results that matter to you. Trust us to take your brand to the next level.</p>
+        <img src="https://via.placeholder.com/800x400" alt="About Us">
     </section>
 
     <script>
