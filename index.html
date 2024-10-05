@@ -8,6 +8,15 @@
 </head>
 <body>
 
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" onclick="showSection('landing')">Home</a>
+        <a href="#" onclick="showSection('niche')">Coaches & Consultants</a>
+        <a href="#" onclick="showSection('form')">Problem Submission Form</a>
+        <a href="#" onclick="showSection('advertising')">Advertising Services</a>
+        <a href="#" onclick="showSection('about')">About Us</a>
+    </div>
+
     <!-- Landing Page -->
     <section id="landing" class="section active">
         <div class="hero">
@@ -34,14 +43,6 @@
         </div>
     </section>
 
-    <!-- Sidebar for Sections -->
-    <div class="sidebar">
-        <a href="#" onclick="showSection('niche')">Section 1: Coaches & Consultants</a>
-        <a href="#" onclick="showSection('form')">Section 2: Problem Submission Form</a>
-        <a href="#" onclick="showSection('advertising')">Section 3: Advertising Services</a>
-        <a href="#" onclick="showSection('about')">Section 4: About Us</a>
-    </div>
-
     <!-- Section 1: Coaches & Consultants -->
     <section id="niche" class="section hidden">
         <h2>Coaches & Consultants</h2>
@@ -52,22 +53,22 @@
     <section id="form" class="section hidden">
         <h2>Problem Submission Form</h2>
         <p>Tell us what challenges you're facing in your business, and we'll craft a strategy to address them:</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXNxxxxxxxxxxxxxxxxxxxx/formResponse" width="100%" height="600" frameborder="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" width="100%" height="600" frameborder="0">Loading…</iframe>
     </section>
 
     <!-- Section 3: Advertising Services -->
     <section id="advertising" class="section hidden">
         <h2>Advertising Services</h2>
-        <p>Advertising is a powerful tool for lead generation. We help you create compelling campaigns that target the right audience to boost your brand’s visibility and bring in high-quality leads. Using platforms like Meta, we deliver personalized ad strategies that guarantee results.</p>
+        <p>Advertising is a powerful tool for lead generation. We help you create compelling campaigns that target the right audience to boost your brand’s visibility and bring in high-quality leads.</p>
     </section>
 
     <!-- Section 4: About Us -->
     <section id="about" class="section hidden">
         <h2>About Us</h2>
-        <p>Echo Flare Digital is a leading digital marketing agency focused on helping coaches and consultants grow their businesses through smart, affordable advertising solutions. With years of experience in social media marketing, we’ve helped many professionals increase their visibility and client base.</p>
+        <p>Echo Flare Digital is a leading digital marketing agency focused on helping coaches and consultants grow their businesses through smart, affordable advertising solutions.</p>
     </section>
 
-    <!-- JavaScript -->
+    <!-- JavaScript for Section Control -->
     <script src="script.js"></script>
 
 </body>
